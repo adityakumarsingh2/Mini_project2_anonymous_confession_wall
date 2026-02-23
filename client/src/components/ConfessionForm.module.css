@@ -1,0 +1,218 @@
+.form {
+    padding: var(--sp-6);
+    margin-bottom: var(--sp-8);
+    border-radius: var(--radius-lg);
+    background: rgba(15, 23, 42, 0.4);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: var(--sp-4);
+}
+
+.titleGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+
+.moodWrapper {
+    width: fit-content;
+}
+
+.moodSelect {
+    background: rgba(131, 58, 180, 0.1);
+    border: 1px solid var(--border-glow);
+    border-radius: 8px;
+    padding: 0.3rem 0.75rem;
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.moodSelect:hover {
+    background: rgba(131, 58, 180, 0.2);
+}
+
+.counter {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.count {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-dim);
+}
+
+.countLabel {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    opacity: 0.6;
+}
+
+.warn .count {
+    color: var(--danger);
+}
+
+.inputWrapper {
+    position: relative;
+    margin-bottom: var(--sp-6);
+}
+
+.textarea {
+    min-height: 180px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.3);
+    border-color: var(--border);
+    padding-bottom: var(--sp-12);
+}
+
+.textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 5px rgba(131, 58, 180, 0.08);
+}
+
+.emojiPicker {
+    position: absolute;
+    bottom: var(--sp-3);
+    left: var(--sp-3);
+    display: flex;
+    gap: var(--sp-2);
+    padding: var(--sp-1) var(--sp-2);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+}
+
+.emojiBtn {
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.emojiBtn:hover {
+    transform: scale(1.25);
+}
+
+.pollCreator {
+    background: rgba(0, 0, 0, 0.2);
+    padding: var(--sp-6);
+    border-radius: var(--radius);
+    margin-bottom: var(--sp-6);
+    border: 1px dashed var(--border);
+}
+
+.pollLabel {
+    font-size: 0.75rem;
+    font-weight: 800;
+    margin-bottom: var(--sp-4);
+    color: var(--text-dim);
+    text-transform: uppercase;
+}
+
+.pollOptions {
+    display: grid;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-4);
+}
+
+.pollInput {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.addOption {
+    padding: var(--sp-2) var(--sp-4);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-weight: 700;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.addOption:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--sp-4);
+}
+
+.toggles {
+    display: flex;
+    gap: var(--sp-4);
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    background: rgba(255, 255, 255, 0.03);
+    padding: var(--sp-2) var(--sp-4);
+    border-radius: 30px;
+    border: 1px solid var(--border);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggleText {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+}
+
+.toggleActive {
+    background: rgba(131, 58, 180, 0.1);
+    border-color: var(--border-glow);
+}
+
+.toggleActive .toggleText {
+    color: var(--primary);
+}
+
+.actions {
+    display: flex;
+    gap: var(--sp-4);
+}
+
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .toggles {
+        justify-content: center;
+    }
+}
