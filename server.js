@@ -6,7 +6,7 @@ const session = require('express-session');
 const cors = require('cors');
 const Confession = require('./models/Confession');
 
-// Passport Config
+// Passport Config.
 require('./config/passport');
 
 const User = require('./models/User');
