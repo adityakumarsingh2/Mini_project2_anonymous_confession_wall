@@ -10,6 +10,7 @@ import DeleteModal from './components/DeleteModal';
 import Toast from './components/Toast';
 import styles from './App.module.css';
 
+
 let toastId = 0;
 
 export default function App() {
