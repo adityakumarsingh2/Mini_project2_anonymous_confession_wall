@@ -3,7 +3,6 @@
 A full-stack anonymous confession platform built using the MERN stack where users can log in with Google, post confessions anonymously, comment, react, and explore trending confessions — all while maintaining complete privacy.
 
 ---
-
 ## 🚀 Live Concept
 
 Users authenticate via Google but their identity remains hidden.
